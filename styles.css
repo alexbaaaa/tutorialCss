@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Rowdies:wght@300;400;700&display=swap');
+
+html {
+    height: 100%;
+
+}
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #d1c2ae;
+    font-family: "Afacad Flux",Montserrat, sans-serif;
+    font-size: 1.1rem;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+    font-family: "Rowdies",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(112,9,9);
+}
+a {
+    text-decoration: none;
+    color: rgb(255,0,93);
+    font-weight: 800;
+}
+a:hover {
+    color: rgb(157,3,32);
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.logo{
+    text-align: center;
+}
+.tag-line {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.list-nav{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-evenly;
+}
+
+.list-nav li a {
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.387);
+    text-transform: uppercase;
+}
+.list-nav li a:hover {
+    color: white;
+    background-color: rgb(255, 0, 93);
+}
+.intro {
+    column-count: 2;
+    text-align: justify;
+    gap: 3rem;
+}
+
+.builder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.builder-component {
+    border: 1px solid rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.24);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.builder-component-name {
+    position: relative;
+
+}
+.builder-component-name::before {
+    content: "";
+    background-image: url(images/icons.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -55px;
+    left: 43%;
+}
+.builder-component_marshmallow .builder-component-name::before {
+    background-position: -40px 0;
+}
+.builder-component_candy .builder-component-name::before {
+    background-position: -80px 0;
+}
+.builder-component_accessories .builder-component-name::before {
+    background-position: -120px 0;
+}
+.builder-action {
+    margin: 40px 0;
+    padding:  1.5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.builder-action-label {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+.builder-action-field {
+    font-size: 1.2rem;
+    flex: 1 1 50%;
+}
+.builder-action-button {
+    margin-top: 2rem;
+    flex: 1 1 100%;
+}
+button {
+    background-color: rgb(255, 0, 93);
+    color: white;
+    border: 1px solid rgba(200,200,200,0.485);
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    box-shadow: inset 0 0 1px 1px rgba(255,255,255,.6);
+
+}
+button:hover {
+    background-color: rgba(255, 255,255, .684);
+    color: rgb(207, 23, 23);
+    box-shadow: inset 0 0 1px 1px rgba(207,23,23,.4);
+    cursor: pointer;
+}
+.ingredients-list {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.ingredients-list li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.ingredients-list li > label {
+    margin-left: 3px;
+}
+.ingredients-list-item {
+    margin-top: .4rem;
+}
+
+.ingredients-list-item:last-child {
+    margin-top: auto;
+}
+
+input[type=radio]+label, input[type=checkbox]+label{
+    position: relative;
+}
+
+input[type=radio]+label::before, input[type=checkbox]+label::before{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(195, 23, 23);
+    top: 5px;
+    left: -20px;
+    background-color: rgba(255, 255,255,.8);
+    
+}
+
+input[type=radio]+label::before {
+    border-radius: 50%;
+}
+
+
+
