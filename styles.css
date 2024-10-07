@@ -212,5 +212,5 @@ input[type=checkbox]:checked+label::before
 }
 .gallery-item {
     flex: 1 1 25%;
-}
+} 
 
