@@ -34,6 +34,16 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+
+section {
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
 .logo{
     text-align: center;
 }
@@ -205,12 +215,40 @@ input[type=checkbox]:checked+label::before
 
 
 .gallery {
-    border: 1px solid blue;
 
     display: flex;
     flex-flow: row wrap;
+    gap: 1rem;
 }
 .gallery-item {
-    flex: 1 1 25%;
-} 
+    background-color: #624a2f;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    flex: 1 0 200px;
+}
+.gallery-item-name{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.8);
+}
+/*----------------------------Paginacion--------------------*/
 
+.pagination {
+    display: flex;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:  2rem;
+    
+}
+.pagination-item {
+    margin-right: 5px;
+}
+.pagination-link {
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
